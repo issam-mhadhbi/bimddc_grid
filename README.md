@@ -9,9 +9,7 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from .Grid import Grid, GridLine, GridLineDirection
-from .GridUI import GridDialog
-from .GridUtils import GridUtils
+from bimddc_grid import Grid, GridDialog, GridLineDirection , GridUtils
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
