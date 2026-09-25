@@ -1,5 +1,9 @@
 # bimddc_grid
-examplae : 
+# Install : 
+```bash
+pip install git+https://github.com/YOUR_USERNAME/bimddc-grid.git
+```
+## Usage : 
 ```python
 import sys
 
