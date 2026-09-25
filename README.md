@@ -1,1 +1,33 @@
 # bimddc_grid
+examplae : 
+```python
+import sys
+
+from PySide6.QtWidgets import QApplication
+
+from .Grid import Grid, GridLine, GridLineDirection
+from .GridUI import GridDialog
+from .GridUtils import GridUtils
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+
+    original_grid = Grid()
+
+    dialog = GridDialog(original_grid)
+
+    if dialog.exec():
+        result = dialog.get_grid()
+
+        print("Accepted. Grid:")
+        print("X =", result.X)
+        print("Y =", result.Y)
+        print("Z =", result.Z)
+    else:
+        print("Cancelled. Original grid left untouched:")
+        print("X =", original_grid.X)
+        print("Y =", original_grid.Y)
+        print("Z =", original_grid.Z)
+
+    sys.exit(app.exec())
+``
