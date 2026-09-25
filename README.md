@@ -1,7 +1,7 @@
 # bimddc_grid
 # Install : 
 ```bash
-pip install git+https://github.com/YOUR_USERNAME/bimddc-grid.git
+pip install git+https://github.com/issam-mhadhbi/bimddc-grid.git
 ```
 ## Usage : 
 ```python
